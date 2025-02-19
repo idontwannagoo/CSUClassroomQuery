@@ -7,27 +7,73 @@ import time
 from openpyxl.styles import Alignment
 from openpyxl.utils import get_column_letter
 
+def parse_week_numbers(week_text):
+    """解析周数文本，返回包含所有周数的集合"""
+    weeks = set()
+    
+    # 判断是否有单双周限定
+    is_odd = '单周' in week_text
+    is_even = '双周' in week_text
+    
+    # 移除"周"字和单双周标记，便于解析
+    week_text = week_text.replace('周', '')
+    # 注意：不要移除"单"和"双"字，因为它们可能出现在中间
+    
+    # 分割多个部分（逗号分隔）
+    parts = week_text.split(',')
+    
+    for part in parts:
+        # 检查这部分是否有单双周限定
+        part_is_odd = is_odd or '单' in part
+        part_is_even = is_even or '双' in part
+        
+        # 移除可能的单双周标记
+        part = part.replace('单', '').replace('双', '')
+        
+        if '-' in part:  # 处理区间，如"1-8"
+            start, end = map(int, part.split('-'))
+            if part_is_odd:
+                weeks.update(w for w in range(start, end + 1) if w % 2 == 1)
+            elif part_is_even:
+                weeks.update(w for w in range(start, end + 1) if w % 2 == 0)
+            else:
+                weeks.update(range(start, end + 1))
+        else:  # 处理单个数字，如"9"
+            week_num = int(part)
+            if (not part_is_odd and not part_is_even) or \
+               (part_is_odd and week_num % 2 == 1) or \
+               (part_is_even and week_num % 2 == 0):
+                weeks.add(week_num)
+    
+    return weeks
+
 def parse_classroom_info(text):
     if not isinstance(text, str):
         return None
         
-    # 匹配周数信息和教室信息的正则表达式
-    week_pattern = r'(\d+)-(\d+)周'
+    # 匹配教室信息的正则表达式
     classroom_pattern = r'[A-D]座\d+'
     
-    # 查找所有符合模式的教室
+    # 匹配周数信息的正则表达式（更复杂的模式）
+    week_pattern = r'(\d+(?:-\d+)?(?:,\d+(?:-\d+)?)*(?:单|双)?周)'
+    
+    # 查找教室信息
     classroom = re.search(classroom_pattern, text)
     if not classroom:
         return None
-        
+    
     # 查找周数信息
     week_info = re.search(week_pattern, text)
     if not week_info:
         return None
-        
+    
+    # 解析周数
+    weeks = parse_week_numbers(week_info.group(1))
+    if not weeks:
+        return None
+    
     return {
-        'start_week': int(week_info.group(1)),
-        'end_week': int(week_info.group(2)),
+        'weeks': weeks,
         'classroom': classroom.group()
     }
 
@@ -69,13 +115,15 @@ def read_excel_cells(filename, base_row, col):
                         for course in cell_value.split('\n'):
                             info = parse_classroom_info(course)
                             if info:
+                                # 格式化周数显示
+                                weeks_list = sorted(info['weeks'])
+                                weeks_str = ','.join(str(w) for w in weeks_list)
                                 results.append(
-                                    f"第{info['start_week']}-{info['end_week']}周 {info['classroom']}"
+                                    f"第{weeks_str}周 {info['classroom']}"
                                 )
                                 classroom_infos.append(info)
                 
                 pbar.update(1)
-                # time.sleep(0.01)  # 添加小延迟使进度条更容易观察
         
         workbook.close()
         return results, classroom_infos if results else (["没有找到符合条件的教室信息"], [])
@@ -90,7 +138,7 @@ def get_classrooms_by_week(classroom_infos, week):
     return sorted(set(
         info['classroom'] 
         for info in classroom_infos 
-        if info['start_week'] <= week <= info['end_week']
+        if week in info['weeks']
     ))
 
 def load_classroom_info():
