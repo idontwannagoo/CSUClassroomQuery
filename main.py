@@ -77,6 +77,47 @@ def parse_classroom_info(text):
         'classroom': classroom.group()
     }
 
+def merge_classroom_results(results):
+    """合并教室使用信息，去除重复并组合相同教室的不同时段"""
+    # 用字典存储每个教室的周数信息
+    classroom_weeks = {}
+    
+    for result in results:
+        # 分割周数和教室信息
+        weeks_part, classroom = result.split(' ', 1)
+        weeks_part = weeks_part.replace('第', '').replace('周', '')
+        
+        # 将周数字符串转换为集合
+        weeks = set(int(w) for w in weeks_part.split(','))
+        
+        # 更新字典
+        if classroom in classroom_weeks:
+            classroom_weeks[classroom].update(weeks)
+        else:
+            classroom_weeks[classroom] = weeks
+    
+    # 将合并后的信息转换回格式化的字符串
+    merged_results = []
+    for classroom, weeks in classroom_weeks.items():
+        # 将周数排序并转换为连续区间
+        weeks_list = sorted(list(weeks))
+        intervals = []
+        start = end = weeks_list[0]
+        
+        for week in weeks_list[1:]:
+            if week == end + 1:
+                end = week
+            else:
+                intervals.append(f"{start}-{end}" if start != end else str(start))
+                start = end = week
+        intervals.append(f"{start}-{end}" if start != end else str(start))
+        
+        # 生成最终的字符串
+        weeks_str = ','.join(intervals)
+        merged_results.append(f"第{weeks_str}周 {classroom}")
+    
+    return sorted(merged_results)
+
 def read_excel_cells(filename, base_row, col):
     try:
         print("\n正在读取Excel文件...")
@@ -125,8 +166,11 @@ def read_excel_cells(filename, base_row, col):
                 
                 pbar.update(1)
         
+        # 合并和去重结果
+        merged_results = merge_classroom_results(results)
+        
         workbook.close()
-        return results, classroom_infos if results else (["没有找到符合条件的教室信息"], [])
+        return merged_results, classroom_infos if merged_results else (["没有找到符合条件的教室信息"], [])
     
     except FileNotFoundError:
         return [f"错误：找不到文件 '{filename}'"], []
