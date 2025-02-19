@@ -2,6 +2,8 @@ import openpyxl
 import re
 import json
 from itertools import islice
+from tqdm import tqdm
+import time
 
 def parse_classroom_info(text):
     if not isinstance(text, str):
@@ -29,6 +31,7 @@ def parse_classroom_info(text):
 
 def read_excel_cells(filename, base_row, col):
     try:
+        print("\n正在读取Excel文件...")
         # 使用只读模式打开Excel文件，并禁用样式加载
         workbook = openpyxl.load_workbook(
             filename, 
@@ -42,29 +45,35 @@ def read_excel_cells(filename, base_row, col):
         classroom_infos = []
         
         # 使用迭代器获取指定列的所有单元格
-        column_cells = sheet.iter_rows(
+        column_cells = list(sheet.iter_rows(
             min_row=base_row,
             max_row=None,  # 读取到最后一行
             min_col=col,
             max_col=col,
             values_only=True
-        )
+        ))
         
-        # 每隔10行取一个值
-        for cell in islice(column_cells, 0, None, 10):
-            cell_value = cell[0]  # 因为只取了一列，所以是第一个元素
-            
-            if cell_value:
-                if isinstance(cell_value, str):
-                    cell_value = cell_value.replace('_x000D_', '')
-                    # 处理多行课程信息
-                    for course in cell_value.split('\n'):
-                        info = parse_classroom_info(course)
-                        if info:
-                            results.append(
-                                f"第{info['start_week']}-{info['end_week']}周 {info['classroom']}"
-                            )
-                            classroom_infos.append(info)
+        # 创建进度条
+        total_cells = len(column_cells)
+        with tqdm(total=total_cells//10 + 1, desc="处理数据", ncols=100) as pbar:
+            # 每隔10行取一个值
+            for cell in islice(column_cells, 0, None, 10):
+                cell_value = cell[0]  # 因为只取了一列，所以是第一个元素
+                
+                if cell_value:
+                    if isinstance(cell_value, str):
+                        cell_value = cell_value.replace('_x000D_', '')
+                        # 处理多行课程信息
+                        for course in cell_value.split('\n'):
+                            info = parse_classroom_info(course)
+                            if info:
+                                results.append(
+                                    f"第{info['start_week']}-{info['end_week']}周 {info['classroom']}"
+                                )
+                                classroom_infos.append(info)
+                
+                pbar.update(1)
+                time.sleep(0.01)  # 添加小延迟使进度条更容易观察
         
         workbook.close()
         return results, classroom_infos if results else (["没有找到符合条件的教室信息"], [])
@@ -85,8 +94,15 @@ def get_classrooms_by_week(classroom_infos, week):
 def load_classroom_info():
     """加载教室信息"""
     try:
+        print("正在加载教室配置...")
         with open('classrooms.json', 'r', encoding='utf-8') as f:
-            return {room['room_number']: room for room in json.load(f)}
+            data = json.load(f)
+            # 添加加载进度条
+            result = {}
+            for room in tqdm(data, desc="加载教室信息", ncols=100):
+                result[room['room_number']] = room
+                time.sleep(0.01)  # 添加小延迟使进度条更容易观察
+            return result
     except FileNotFoundError:
         print("警告：找不到classrooms.json文件")
         return {}
