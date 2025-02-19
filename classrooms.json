@@ -1,0 +1,1472 @@
+[
+  {
+    "campus": "新校区",
+    "room_number": "D座101",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 204
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座103",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 204
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座104",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 204
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座106",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座108",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 213
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座110",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座113",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座117",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 177
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座120",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 188
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座121",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 175
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座122",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 175
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座123",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 364
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座125",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 364
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座128",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 144
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座129",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 144
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座130",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 178
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座202",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 178
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座203",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 144
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座204",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 144
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座205",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 219
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座206",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 175
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座207",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 188
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座209",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 188
+  },
+  {
+    "campus": "新校区",
+    "room_number": "D座303",
+    "building": "D座",
+    "room_type": "多媒体教室",
+    "capacity": 364
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座103",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座104",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座105",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座108",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座109",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座111",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座112",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座203",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座204",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座205",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座206",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座207",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座209",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座210",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座303",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座304",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座307",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座308",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座310",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座311",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座402",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座403",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座404",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座407",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座408",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座410",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座411",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座501",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 102
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座502",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座503",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座504",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座507",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座508",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座510",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座511",
+    "building": "C座",
+    "room_type": "多媒体教室",
+    "capacity": 164
+  },
+  {
+    "campus": "新校区",
+    "room_number": "C座512",
+    "building": "C座",
+    "room_type": "艺术多媒体室",
+    "capacity": 30
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座101",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座102",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座103",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 70
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座105",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座106",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座107",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座108",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座110",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 188
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座111",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座112",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座113",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座114",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座117",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座118",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座201",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座202",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座203",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 70
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座205",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座206",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座207",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座208",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座210",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 188
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座211",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座212",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座213",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座214",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座217",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座218",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座219",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座301",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座302",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座303",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 70
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座304",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 136
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座305",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 56
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座306",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座307",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座308",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座309",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座311",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 188
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座312",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座313",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座314",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座315",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座318",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座319",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座320",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座401",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座402",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座403",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 70
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座404",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 136
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座405",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 56
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座406",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座407",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座408",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座409",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座411",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 188
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座412",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座413",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座414",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座415",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座418",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座419",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座420",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座501",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座502",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座503",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 70
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座504",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 70
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座505",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座506",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座507",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座508",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 168
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座510",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 188
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座511",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座512",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座513",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座514",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座517",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座518",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 228
+  },
+  {
+    "campus": "新校区",
+    "room_number": "B座519",
+    "building": "B座",
+    "room_type": "多媒体教室",
+    "capacity": 192
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座101",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 175
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座102",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 74
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座103",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 74
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座104",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 147
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座108",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座110",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 150
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座111",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 100
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座112",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 100
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座113",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 84
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座114",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 84
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座115",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 84
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座117",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座119",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 144
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座122",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 144
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座123",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 74
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座124",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 74
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座201",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 175
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座202",
+    "building": "A座",
+    "room_type": "智慧教室",
+    "capacity": 35
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座203",
+    "building": "A座",
+    "room_type": "智慧教室",
+    "capacity": 35
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座204",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 147
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座206",
+    "building": "A座",
+    "room_type": "智慧教室",
+    "capacity": 70
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座207",
+    "building": "A座",
+    "room_type": "智慧教室",
+    "capacity": 70
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座208",
+    "building": "A座",
+    "room_type": "智慧教室",
+    "capacity": 70
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座210",
+    "building": "A座",
+    "room_type": "智慧教室",
+    "capacity": 100
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座211",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 100
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座212",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 100
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座213",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 84
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座214",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 84
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座215",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 84
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座217",
+    "building": "A座",
+    "room_type": "智慧教室",
+    "capacity": 70
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座218",
+    "building": "A座",
+    "room_type": "智慧教室",
+    "capacity": 70
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座219",
+    "building": "A座",
+    "room_type": "智慧教室",
+    "capacity": 35
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座220",
+    "building": "A座",
+    "room_type": "智慧教室",
+    "capacity": 70
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座221",
+    "building": "A座",
+    "room_type": "智慧教室",
+    "capacity": 35
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座222",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 68
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座223",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 32
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座224",
+    "building": "A座",
+    "room_type": "智慧教室",
+    "capacity": 35
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座301",
+    "building": "A座",
+    "room_type": "大学物理室",
+    "capacity": 175
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座302",
+    "building": "A座",
+    "room_type": "设计室",
+    "capacity": 40
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座303",
+    "building": "A座",
+    "room_type": "设计室",
+    "capacity": 40
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座304",
+    "building": "A座",
+    "room_type": "大学物理室",
+    "capacity": 147
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座306",
+    "building": "A座",
+    "room_type": "设计室",
+    "capacity": 60
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座307",
+    "building": "A座",
+    "room_type": "设计室",
+    "capacity": 60
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座308",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座310",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 150
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座311",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 100
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座312",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 100
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座313",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 84
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座314",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 84
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座315",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 84
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座317",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座318",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座319",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 74
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座320",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 104
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座321",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 74
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座322",
+    "building": "A座",
+    "room_type": "多媒体教室",
+    "capacity": 74
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座323",
+    "building": "A座",
+    "room_type": "设计室",
+    "capacity": 35
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座324",
+    "building": "A座",
+    "room_type": "设计室",
+    "capacity": 35
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座401",
+    "building": "A座",
+    "room_type": "大学物理室",
+    "capacity": 200
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座402",
+    "building": "A座",
+    "room_type": "物理演示室",
+    "capacity": 50
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座404",
+    "building": "A座",
+    "room_type": "大学物理室",
+    "capacity": 147
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座410",
+    "building": "A座",
+    "room_type": "大学物理室",
+    "capacity": 150
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座411",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 100
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座412",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 100
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座413",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 84
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座414",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 84
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座415",
+    "building": "A座",
+    "room_type": "制图室",
+    "capacity": 84
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座417",
+    "building": "A座",
+    "room_type": "大学物理室",
+    "capacity": 116
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座419",
+    "building": "A座",
+    "room_type": "大学物理室",
+    "capacity": 224
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座420",
+    "building": "A座",
+    "room_type": "大学物理室",
+    "capacity": 144
+  },
+  {
+    "campus": "新校区",
+    "room_number": "A座421",
+    "building": "A座",
+    "room_type": "大学物理室",
+    "capacity": 224
+  }
+]

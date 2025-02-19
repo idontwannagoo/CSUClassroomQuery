@@ -4,6 +4,5 @@ requirements.txt
 input1.xlsx
 input.xls
 input1.xls
-classrooms.json
 classroom.py
 
