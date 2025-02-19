@@ -106,6 +106,44 @@ def get_available_classrooms(used_classrooms, all_classrooms):
             })
     return sorted(available, key=lambda x: x['room_number'])
 
+def get_row_col_by_time(day, period):
+    """
+    将周几和节次转换为对应的行列数
+    day: 1-5 (周一到周五)
+    period: 1-5 (1: 1-2节, 2: 3-4节, 3: 5-6节, 4: 7-8节, 5: 9-10节)
+    返回: (row, col)
+    """
+    # 基准行数计算：每个时间段对应的基准行
+    period_to_row = {
+        1: 4,   # 1-2节
+        2: 5,   # 3-4节
+        3: 6,   # 5-6节
+        4: 7,   # 7-8节
+        5: 8    # 9-10节
+    }
+    
+    # 列数计算：周一从第2列开始
+    col = day + 1
+    
+    # 获取对应的行数
+    row = period_to_row.get(period)
+    
+    if not row:
+        raise ValueError("无效的节次")
+    
+    return row, col
+
+def format_time_period(period):
+    """将节次数转换为具体的节次范围"""
+    period_map = {
+        1: "1-2",
+        2: "3-4",
+        3: "5-6",
+        4: "7-8",
+        5: "9-10"
+    }
+    return period_map.get(period, "未知")
+
 def main():
     print("Excel课程教室信息读取程序")
     print("请确保'input.xlsx'文件和classrooms.json在当前目录下")
@@ -115,17 +153,28 @@ def main():
     
     while True:
         try:
-            base_row = int(input("请输入基准行号（1-10，输入0退出）："))
-            if base_row == 0:
+            print("\n请输入查询信息（输入0退出）：")
+            day = int(input("请输入星期（1-5，周一到周五）："))
+            if day == 0:
                 break
-            
-            if base_row < 1 or base_row > 10:
-                print("错误：行号必须在1-10之间")
-                continue
                 
-            col = int(input("请输入列号："))
+            if day < 1 or day > 5:
+                print("错误：星期必须在1-5之间")
+                continue
             
-            results, classroom_infos = read_excel_cells('input1.xlsx', base_row, col)
+            period = int(input("请输入节次（1:1-2节, 2:3-4节, 3:5-6节, 4:7-8节, 5:9-10节）："))
+            if period < 1 or period > 5:
+                print("错误：节次必须在1-5之间")
+                continue
+            
+            try:
+                row, col = get_row_col_by_time(day, period)
+                print(f"\n查询周{day} 第{format_time_period(period)}节的课程 (行{row}, 列{col})")
+            except ValueError as e:
+                print(f"错误：{str(e)}")
+                continue
+            
+            results, classroom_infos = read_excel_cells('input1.xlsx', row, col)
             print("\n所有查询结果：")
             for result in results:
                 print(result)
@@ -140,7 +189,7 @@ def main():
                             print("错误：周数必须在1-16之间")
                             continue
                             
-                        print(f"\n第{current_week}周的课程教室：")
+                        print(f"\n第{current_week}周 周{day} 第{format_time_period(period)}节的教室使用情况：")
                         used_classrooms = get_classrooms_by_week(classroom_infos, current_week)
                         if used_classrooms:
                             print(f"\n已使用教室（共{len(used_classrooms)}个）：")
@@ -158,7 +207,7 @@ def main():
                             else:
                                 print("\n没有可用教室")
                         else:
-                            print("本周没有课程，所有教室都可用：")
+                            print("本时段没有课程，所有教室都可用：")
                             print("教室号\t\t类型\t\t容量")
                             print("-" * 50)
                             for room_number, info in all_classrooms.items():
