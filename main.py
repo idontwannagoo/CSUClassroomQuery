@@ -1,5 +1,6 @@
 import openpyxl
 import re
+import json
 from itertools import islice
 
 def parse_classroom_info(text):
@@ -81,9 +82,36 @@ def get_classrooms_by_week(classroom_infos, week):
         if info['start_week'] <= week <= info['end_week']
     ))
 
+def load_classroom_info():
+    """加载教室信息"""
+    try:
+        with open('classrooms.json', 'r', encoding='utf-8') as f:
+            return {room['room_number']: room for room in json.load(f)}
+    except FileNotFoundError:
+        print("警告：找不到classrooms.json文件")
+        return {}
+    except json.JSONDecodeError:
+        print("警告：classrooms.json文件格式错误")
+        return {}
+
+def get_available_classrooms(used_classrooms, all_classrooms):
+    """获取可用教室列表"""
+    available = []
+    for room_number, room_info in all_classrooms.items():
+        if room_number not in used_classrooms:
+            available.append({
+                'room_number': room_number,
+                'room_type': room_info.get('room_type', '未知类型'),
+                'capacity': room_info.get('capacity', '未知容量')
+            })
+    return sorted(available, key=lambda x: x['room_number'])
+
 def main():
     print("Excel课程教室信息读取程序")
-    print("请确保'input.xlsx'文件在当前目录下")
+    print("请确保'input.xlsx'文件和classrooms.json在当前目录下")
+    
+    # 加载所有教室信息
+    all_classrooms = load_classroom_info()
     
     while True:
         try:
@@ -102,7 +130,7 @@ def main():
             for result in results:
                 print(result)
             
-            if classroom_infos:
+            if classroom_infos and all_classrooms:  # 确保有教室信息和配置文件
                 while True:
                     try:
                         current_week = int(input("\n请输入当前周数（1-16，输入0返回）："))
@@ -113,13 +141,28 @@ def main():
                             continue
                             
                         print(f"\n第{current_week}周的课程教室：")
-                        classrooms = get_classrooms_by_week(classroom_infos, current_week)
-                        if classrooms:
-                            print(f"共{len(classrooms)}个教室：")
-                            for classroom in classrooms:
+                        used_classrooms = get_classrooms_by_week(classroom_infos, current_week)
+                        if used_classrooms:
+                            print(f"\n已使用教室（共{len(used_classrooms)}个）：")
+                            for classroom in used_classrooms:
                                 print(classroom)
+                            
+                            # 获取并显示可用教室
+                            available = get_available_classrooms(used_classrooms, all_classrooms)
+                            if available:
+                                print(f"\n可用教室（共{len(available)}个）：")
+                                print("教室号\t\t类型\t\t容量")
+                                print("-" * 50)
+                                for room in available:
+                                    print(f"{room['room_number']:<10}\t{room['room_type']:<10}\t{room['capacity']}人")
+                            else:
+                                print("\n没有可用教室")
                         else:
-                            print("本周没有课程")
+                            print("本周没有课程，所有教室都可用：")
+                            print("教室号\t\t类型\t\t容量")
+                            print("-" * 50)
+                            for room_number, info in all_classrooms.items():
+                                print(f"{room_number:<10}\t{info['room_type']:<10}\t{info['capacity']}人")
                             
                     except ValueError:
                         print("错误：请输入有效的数字")
