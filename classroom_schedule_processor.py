@@ -10,7 +10,7 @@ def load_classrooms():
     """从CSV文件加载教室列表"""
     classrooms = set()
     try:
-        with open('source/XiaoXiang.csv', 'r', encoding='gbk') as f:
+        with open('source/TianXin.csv', 'r', encoding='gbk') as f:
             reader = csv.reader(f)
             for row in reader:
                 if row:  # 确保行不为空
@@ -86,8 +86,12 @@ def parse_weeks(week_range, single_double=None):
     
     return weeks
 
-def process_excel():
-    """处理Excel文件并生成空闲教室表"""
+def process_excel(show_occupied=False):
+    """处理Excel文件并生成教室表
+    
+    Args:
+        show_occupied (bool): True显示占用教室，False显示空闲教室
+    """
     print("开始处理课程表...")
     
     # 加载所有教室
@@ -102,7 +106,7 @@ def process_excel():
     
     # 加载Excel文件
     try:
-        workbook = openpyxl.load_workbook('source/XiaoXiang.xlsx', read_only=True, data_only=True)
+        workbook = openpyxl.load_workbook('source/TianXin.xlsx', read_only=True, data_only=True)
         sheet = workbook.active
         
         # 获取总行数
@@ -155,7 +159,7 @@ def process_excel():
                 pbar.update(1)
         
         # 创建输出Excel
-        print("\n正在生成空闲教室表...")
+        print("\n正在生成{}教室表...".format("占用" if show_occupied else "空闲"))
         output_workbook = openpyxl.Workbook()
         
         # 为每周创建工作表
@@ -182,10 +186,11 @@ def process_excel():
                 for period in range(1, 6):
                     key = (week, day, period)
                     used = used_classrooms.get(key, set())
-                    available = all_classrooms - used
+                    # 根据show_occupied选项决定显示哪些教室
+                    classrooms_to_show = used if show_occupied else all_classrooms - used
                     
-                    # 将可用教室号写入单元格
-                    cell_value = " ".join(sorted(available))
+                    # 将教室号写入单元格
+                    cell_value = " ".join(sorted(classrooms_to_show))
                     sheet.cell(row=period+1, column=day+1, value=cell_value)
             
             # 调整列宽和行高
@@ -200,7 +205,7 @@ def process_excel():
                     cell.alignment = Alignment(wrap_text=True, vertical='center', horizontal='center')
         
         # 保存文件
-        output_filename = 'xiaoxiang_empty_classrooms.xlsx'
+        output_filename = 'TianXin_{}_classrooms.xlsx'.format("occupied" if show_occupied else "empty")
         print(f"\n正在保存结果到 {output_filename}...")
         output_workbook.save(output_filename)
         print("导出完成！")
@@ -211,4 +216,21 @@ def process_excel():
         workbook.close()
 
 if __name__ == "__main__":
-    process_excel() 
+    while True:
+        print("\n请选择要生成的教室表类型：")
+        print("1. 空闲教室表")
+        print("2. 占用教室表")
+        print("0. 退出程序")
+        
+        try:
+            choice = int(input("请输入选项："))
+            if choice == 0:
+                break
+            elif choice == 1:
+                process_excel(show_occupied=False)
+            elif choice == 2:
+                process_excel(show_occupied=True)
+            else:
+                print("无效的选项，请重新输入")
+        except ValueError:
+            print("错误：请输入有效的数字") 

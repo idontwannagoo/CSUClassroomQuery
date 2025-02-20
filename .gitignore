@@ -1,8 +1,13 @@
 .venv/
+.gitignore
 input.xlsx
 requirements.txt
 input1.xlsx
 input.xls
 input1.xls
 classroom.py
-
+temp/
+source
+old_version/*.csv
+old_version/*.xlsx
+*.xlsx
