@@ -20,7 +20,7 @@ def process_excel_files():
                 
                 # 获取第八列数据（索引为7）
                 if len(df.columns) >= 8:
-                    classroom_data = df.iloc[:, 7]
+                    classroom_data = df.iloc[2:, 7] # 从第三行开始选取第八列数据
                     
                     # 去重
                     unique_classrooms = pd.Series(classroom_data.unique())
